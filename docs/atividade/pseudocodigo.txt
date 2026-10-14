@@ -1,0 +1,101 @@
+algoritmo "Monitoramento do preco da cesta basica"
+var
+    nome1, nome2, nome3: caractere
+    precoAnterior1, precoAnterior2, precoAnterior3: real
+    precoAtual1, precoAtual2, precoAtual3: real
+    variacao1, variacao2, variacao3: real
+    situacao1, situacao2, situacao3: caractere
+inicio
+    // Produto 1
+    escreva("Digite o nome do produto 1:")
+    leia(nome1)
+    escreva("Digite o preco do produto 1 no mes anterior:")
+    leia(precoAnterior1)
+    escreva("Digite o preco do produto 1 no mes atual:")
+    leia(precoAtual1)
+
+    se (precoAnterior1 > 0) e (precoAtual1 >= 0) entao
+        variacao1 <- ((precoAtual1 - precoAnterior1) / precoAnterior1) * 100
+        se variacao1 > 0 entao
+            situacao1 <- "AUMENTO"
+        senao
+            se variacao1 < 0 entao
+                situacao1 <- "QUEDA"
+            senao
+                situacao1 <- "ESTÁVEL"
+            fimse
+        fimse
+        escreva("Produto: ", nome1)
+        escreva("Preco anterior: R$ ", precoAnterior1)
+        escreva("Preco atual: R$ ", precoAtual1)
+        escreva("Variacao percentual: ", variacao1, "%")
+        escreva("Situacao: ", situacao1)
+    senao
+        situacao1 <- "DADOS INVÁLIDOS"
+        escreva("Produto: ", nome1, " - ", situacao1)
+        escreva("O preco anterior deve ser maior que zero e o atual nao pode ser negativo.")
+        escreva("Variacao percentual nao definida. Corrija os precos e execute novamente.")
+    fimse
+
+    // Produto 2
+    escreva("Digite o nome do produto 2:")
+    leia(nome2)
+    escreva("Digite o preco do produto 2 no mes anterior:")
+    leia(precoAnterior2)
+    escreva("Digite o preco do produto 2 no mes atual:")
+    leia(precoAtual2)
+
+    se (precoAnterior2 > 0) e (precoAtual2 >= 0) entao
+        variacao2 <- ((precoAtual2 - precoAnterior2) / precoAnterior2) * 100
+        se variacao2 > 0 entao
+            situacao2 <- "AUMENTO"
+        senao
+            se variacao2 < 0 entao
+                situacao2 <- "QUEDA"
+            senao
+                situacao2 <- "ESTÁVEL"
+            fimse
+        fimse
+        escreva("Produto: ", nome2)
+        escreva("Preco anterior: R$ ", precoAnterior2)
+        escreva("Preco atual: R$ ", precoAtual2)
+        escreva("Variacao percentual: ", variacao2, "%")
+        escreva("Situacao: ", situacao2)
+    senao
+        situacao2 <- "DADOS INVÁLIDOS"
+        escreva("Produto: ", nome2, " - ", situacao2)
+        escreva("O preco anterior deve ser maior que zero e o atual nao pode ser negativo.")
+        escreva("Variacao percentual nao definida. Corrija os precos e execute novamente.")
+    fimse
+
+    // Produto 3
+    escreva("Digite o nome do produto 3:")
+    leia(nome3)
+    escreva("Digite o preco do produto 3 no mes anterior:")
+    leia(precoAnterior3)
+    escreva("Digite o preco do produto 3 no mes atual:")
+    leia(precoAtual3)
+
+    se (precoAnterior3 > 0) e (precoAtual3 >= 0) entao
+        variacao3 <- ((precoAtual3 - precoAnterior3) / precoAnterior3) * 100
+        se variacao3 > 0 entao
+            situacao3 <- "AUMENTO"
+        senao
+            se variacao3 < 0 entao
+                situacao3 <- "QUEDA"
+            senao
+                situacao3 <- "ESTÁVEL"
+            fimse
+        fimse
+        escreva("Produto: ", nome3)
+        escreva("Preco anterior: R$ ", precoAnterior3)
+        escreva("Preco atual: R$ ", precoAtual3)
+        escreva("Variacao percentual: ", variacao3, "%")
+        escreva("Situacao: ", situacao3)
+    senao
+        situacao3 <- "DADOS INVÁLIDOS"
+        escreva("Produto: ", nome3, " - ", situacao3)
+        escreva("O preco anterior deve ser maior que zero e o atual nao pode ser negativo.")
+        escreva("Variacao percentual nao definida. Corrija os precos e execute novamente.")
+    fimse
+fimalgoritmo
