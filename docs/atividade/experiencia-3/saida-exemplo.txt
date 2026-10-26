@@ -1,0 +1,36 @@
+TEMPERATURAS MAXIMAS DO MES
+Quantidade de dias do mes (28 a 31): Maxima do dia 1 em C (use ponto decimal): Maxima do dia 2 em C (use ponto decimal): Maxima do dia 3 em C (use ponto decimal): Maxima do dia 4 em C (use ponto decimal): Maxima do dia 5 em C (use ponto decimal): Maxima do dia 6 em C (use ponto decimal): Maxima do dia 7 em C (use ponto decimal): Maxima do dia 8 em C (use ponto decimal): Maxima do dia 9 em C (use ponto decimal): Maxima do dia 10 em C (use ponto decimal): Maxima do dia 11 em C (use ponto decimal): Maxima do dia 12 em C (use ponto decimal): Maxima do dia 13 em C (use ponto decimal): Maxima do dia 14 em C (use ponto decimal): Maxima do dia 15 em C (use ponto decimal): Maxima do dia 16 em C (use ponto decimal): Maxima do dia 17 em C (use ponto decimal): Maxima do dia 18 em C (use ponto decimal): Maxima do dia 19 em C (use ponto decimal): Maxima do dia 20 em C (use ponto decimal): Maxima do dia 21 em C (use ponto decimal): Maxima do dia 22 em C (use ponto decimal): Maxima do dia 23 em C (use ponto decimal): Maxima do dia 24 em C (use ponto decimal): Maxima do dia 25 em C (use ponto decimal): Maxima do dia 26 em C (use ponto decimal): Maxima do dia 27 em C (use ponto decimal): Maxima do dia 28 em C (use ponto decimal): 
+DIA | MAXIMA (C)
+----+-----------
+  1 |       1.00
+  2 |       2.00
+  3 |       3.00
+  4 |       4.00
+  5 |       5.00
+  6 |       6.00
+  7 |       7.00
+  8 |       8.00
+  9 |       9.00
+ 10 |      10.00
+ 11 |      11.00
+ 12 |      12.00
+ 13 |      13.00
+ 14 |      14.00
+ 15 |      15.00
+ 16 |      16.00
+ 17 |      17.00
+ 18 |      18.00
+ 19 |      19.00
+ 20 |      20.00
+ 21 |      21.00
+ 22 |      22.00
+ 23 |      23.00
+ 24 |      24.00
+ 25 |      25.00
+ 26 |      26.00
+ 27 |      27.00
+ 28 |      28.00
+
+Media das maximas: 14.50 C
+Maior maxima: 28.00 C (dia 28)
+Menor maxima: 1.00 C (dia 1)

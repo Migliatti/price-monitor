@@ -1,0 +1,8 @@
+Compilacao: clang -std=c11 -Wall -Wextra -Werror -pedantic
+PASSOU: 28 dias crescentes
+PASSOU: 31 dias negativos
+PASSOU: 29 dias iguais e empate
+PASSOU: 30 dias e validacao
+PASSOU: EOF sem dias
+PASSOU: EOF durante leitura
+PASSOU: ultima linha sem newline

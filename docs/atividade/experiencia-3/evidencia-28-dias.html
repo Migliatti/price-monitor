@@ -1,0 +1,64 @@
+<!doctype html><html lang="pt-BR"><meta charset="utf-8"><title>Evidência de execução C — 28-dias</title><style>body{background:#101821;color:#e2edf6;font:15px system-ui;margin:24px}h1{font-size:23px}.grid{display:grid;grid-template-columns:1.35fr 1fr;gap:20px}pre{background:#182432;padding:18px;white-space:pre-wrap;font:13px/1.45 monospace;border:1px solid #34495d}small{color:#b0c5d5}</style><h1>Temperatura mensal — execução local verificada</h1><p>Teste: 28-dias · Entrada: 28 dias; temperaturas de 1 a 28 °C · Código de saída: 0</p><small>Compilador: clang · C11 · -Wall -Wextra -Werror -pedantic. Saída real capturada do executável, sem edição dos resultados.</small><div class="grid"><section><h2>Trecho do código executado</h2><pre>    /* A referencia inicial vem dos dados, permitindo valores negativos. */
+    float maior = temperaturas[0];
+    float menor = temperaturas[0];
+    int dia_maior = 0;
+    int dia_menor = 0;
+    double soma = 0.0;
+    for (int dia = 0; dia &lt; dias; dia++) {
+        soma += temperaturas[dia];
+        /* Comparacoes estritas preservam o primeiro dia em empates. */
+        if (temperaturas[dia] &gt; maior) {
+            maior = temperaturas[dia];
+            dia_maior = dia;
+        }
+        if (temperaturas[dia] &lt; menor) {
+            menor = temperaturas[dia];
+            dia_menor = dia;
+        }
+    }
+
+    puts(&quot;\nDIA | MAXIMA (C)&quot;);
+    puts(&quot;----+-----------&quot;);
+    for (int dia = 0; dia &lt; dias; dia++) {
+        printf(&quot;%3d | %10.2f\n&quot;, dia + 1, temperaturas[dia]);
+    }
+    printf(&quot;\nMedia das maximas: %.2f C\n&quot;, soma / dias);
+    printf(&quot;Maior maxima: %.2f C (dia %d)\n&quot;, maior, dia_maior + 1);
+    printf(&quot;Menor maxima: %.2f C (dia %d)\n&quot;, menor, dia_menor + 1);
+    return 0;
+}
+</pre></section><section><h2>Saída do programa</h2><pre>DIA | MAXIMA (C)
+----+-----------
+  1 |       1.00
+  2 |       2.00
+  3 |       3.00
+  4 |       4.00
+  5 |       5.00
+  6 |       6.00
+  7 |       7.00
+  8 |       8.00
+  9 |       9.00
+ 10 |      10.00
+ 11 |      11.00
+ 12 |      12.00
+ 13 |      13.00
+ 14 |      14.00
+ 15 |      15.00
+ 16 |      16.00
+ 17 |      17.00
+ 18 |      18.00
+ 19 |      19.00
+ 20 |      20.00
+ 21 |      21.00
+ 22 |      22.00
+ 23 |      23.00
+ 24 |      24.00
+ 25 |      25.00
+ 26 |      26.00
+ 27 |      27.00
+ 28 |      28.00
+
+Media das maximas: 14.50 C
+Maior maxima: 28.00 C (dia 28)
+Menor maxima: 1.00 C (dia 1)
+</pre></section></div></html>
